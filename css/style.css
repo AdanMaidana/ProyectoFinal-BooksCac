@@ -335,7 +335,7 @@ nav h1 {
     box-shadow: 0 5px 5px rgb(130, 130, 130);
 }
 
-.card:hover .book-img{
+.card:hover .book-img {
     transform: scale(.9);
 }
 
@@ -453,7 +453,7 @@ nav h1 {
         }
 
         ul {
-      
+
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -469,7 +469,7 @@ nav h1 {
             margin-bottom: .6rem;
         }
 
-        ul li:first-child{
+        ul li:first-child {
             margin-bottom: .5rem;
         }
     }
@@ -651,4 +651,114 @@ nav h1 {
 
 .error {
     color: rgb(255, 110, 110);
+}
+
+/*SECCIÓN CRUD*/
+
+#crud {
+    padding: 1rem;
+
+    hr {
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    thead {
+        background-color: #695853;
+        color: #fff;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        padding: 8px;
+        text-align: center;
+    }
+
+}
+
+
+
+#itemForm {
+
+    button {
+        padding: 1rem;
+        height: 30px;
+        width: 100%;
+        max-width: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.formGroupsContainer {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: .25rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+
+        label {
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            padding: 1rem .5rem;
+            background-color: #cda69a;
+            color: #3a3a3a;
+            border: none;
+            border-radius: 2px;
+            font-size: .9rem;
+        }
+
+        #sinopsis {
+            min-width: 100%;
+            max-width: 400px;
+            min-height: 100px;
+            max-height: 200px;
+            padding: .5rem;
+            background-color: #cda69a;
+            color: #3a3a3a;
+            border: none;
+            border-radius: 2px;
+            font-size: .9rem;
+        }
+
+        input[type="file"] {
+            height: max-content;
+        }
+
+    }
 }
